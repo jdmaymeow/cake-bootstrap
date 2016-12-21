@@ -6,9 +6,9 @@
         "secure-http": false
     },
     "require": {
-        "php": ">=5.4.16",
-        "cakephp/cakephp": "~3.0",
-        "jdmaymeow/cake-font-awesome": ">=1.0"
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.3.2 <4.0.0",
+        "jdmaymeow/cake-font-awesome": "1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
