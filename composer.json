@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Bootstrap\\": "src"
+            "CakeBootstrap\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Bootstrap\\Test\\": "tests",
+            "CakeBootstrap\\Test\\": "tests",
             "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
         }
     }

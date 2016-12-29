@@ -72,13 +72,18 @@
                 /*$adminMenuCellHead = $this->cell('MenuManager.Menu', [
                     'options' => ['menuId' => 1]
                 ], ['cache' => ['key' => 'top_menu_' . $this->request->prefix]]);*/
+
+                $adminMenu = $this->cell('CakeBootstrap.Menu::Admin');
                 ?>
 
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right hidden-sm hidden-md">
-
+                <?= $adminMenu ?>
+                <li>
+                    <a href="#"><?= $this->Html->image('/' . 'nodes\\images\\de827227-bc4b-4df5-98ad-1efc6636fd52.gif', ['height' => '18', 'width' => '18', 'class' => 'img img-circle'])?> May</a>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
