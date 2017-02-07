@@ -50,7 +50,7 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="/">
-                Code Advent 2016
+                <i class="fa fa-diamond"></i> MayMeow Cloud Platform <label class="label label-danger">Beta</label>
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar">

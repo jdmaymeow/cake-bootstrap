@@ -148,9 +148,9 @@ Cms
                             <div class="panel panel-default">
                                 <div class="panel-body text-center">
                                         <h2><i class="fa fa-plus-square-o text-amethyst"></i></h2>
-                                        <p><strong>You currently have now <%= $pluralVar %></strong></p>
-                                        <o>To get started, click to button bellow and create new <%= $singularVar %></p>
-                                        <?= $this->Html->link(__('Add new <%= $singularVar %>'), ['action' => 'add'], ['class' => 'btn btn-sm btn-primary']); ?>
+                                        <p><strong>You currently have now <%= $pluralHumanName %></strong></p>
+                                        <p>To get started, click to button bellow and create new <%= $singularHumanName %></p>
+                                        <?= $this->Html->link(__('Add new <%= $singularHumanName %>'), ['action' => 'add'], ['class' => 'btn btn-sm btn-primary']); ?>
                                 </div>
                             </div>
                         </div>
