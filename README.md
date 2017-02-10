@@ -37,6 +37,25 @@ If you want to use child themes update your appController with following code.
     }
 ```
 
+## Default theme
+
+Open your `codeadvent.json` and add settings into CodeAdvent section
+
+```json
+{
+
+"adminTheme" : "bootswatch/flatly/bootstrap.min"
+}
+```
+
+Next update AppController beforeRender function with
+
+```php
+//Default theme for CakeBootstrap
+$theme = Configure::read('CodeAdvent.adminTheme');
+$this->set('CA_DEFAULT_ADMIN_THEME', $theme);
+```
+
 ## Child Themes
 
 ### Configuration - Bootstrap

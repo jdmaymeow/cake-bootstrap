@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <?php echo $this->Html->css('CakeBootstrap.bootstrap'); ?>
+    <?php echo $this->Html->css('CakeBootstrap.' . $CA_DEFAULT_THEME); ?>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
