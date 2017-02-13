@@ -3,12 +3,17 @@
             class="fa fa-th text-modern"></i></a>
     <ul class="dropdown-menu">
         <?php foreach ($menu as $menuItem): ?>
-            <li><a href="<?= $this->Url->build(
-                    [
-                        'controller' => $menuItem['controller'],
-                        'plugin' => $menuItem['plugin'],
-                        'action' => 'index'
-                    ]); ?>"><?= $menuItem['controller'] ?></a></li>
+
+            <?php
+                $link = [
+                    'prefix' => $menuItem['prefix'],
+                    'controller' => $menuItem['controller'],
+                    'plugin' => $menuItem['plugin'],
+                    'action' => 'index'
+                ];
+            ?>
+
+            <li><a href="<?= $this->Url->build($link); ?>"><?= $menuItem['controller'] ?></a></li>
         <?php endforeach; ?>
     </ul>
 

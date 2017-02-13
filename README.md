@@ -113,3 +113,36 @@ Every plugin will have template in analogical path.
 ```
 plugins\<Your-Theme-Name>\src\Template\Plugin\<Plugin-Name>\<Controller>\<action>.ctp
 ```
+
+## Admin template top menu
+
+If you want use top menu for admin template update following files
+
+### AppController
+
+add following lines or uncomment if you using `jdmaymeow/app`
+
+```php
+// ADMIN TOP MENU
+$adminMenu = Configure::read('CakeBootstrap.adminTopMenu');
+$this->set('MCLOUD_ADMIN_TOP_MENU', $adminMenu);
+```
+
+and add configuration into `codeadvent.json` file.
+
+```json
+"CodeAdvent": {
+  "adminTopMenu" : "admin_top_menu"
+}
+```
+
+And create menu element `admin_top_menu.ctp` in elements
+
+```html
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    Admin
+    <ul class="dropdown-menu">
+        <li><a href="#">Test</a> </li>
+    </ul>
+</a>
+```

@@ -50,11 +50,14 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <?php $adminMenu = $this->cell('CakeBootstrap.Menu::Admin'); ?>
-                <?= $adminMenu ?>
+                <li>
+                    <?= $this->element($MCLOUD_ADMIN_TOP_MENU) ?>
+                </li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
+                <li>
+                    <?= $this->element('CakeBootstrap.usermenu') ?>
+                </li>
                 <li><a href="#">Help</a></li>
             </ul>
             <!--<form class="navbar-form navbar-right">
