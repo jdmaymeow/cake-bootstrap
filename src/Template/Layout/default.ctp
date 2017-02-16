@@ -62,27 +62,15 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
-
-                </li>
-                <!--<li><a href="<? /*= $this->Url->build(['prefix' => false,'plugin' => false, 'controller' => 'pages', 'action' => 'display', 'particles'])*/ ?>">Home</a></li>-->
-                <?= !empty($auth) ? $this->fetch('actions_for_controller') : ''; ?>
-
-                <?php
-                /*$adminMenuCellHead = $this->cell('MenuManager.Menu', [
-                    'options' => ['menuId' => 1]
-                ], ['cache' => ['key' => 'top_menu_' . $this->request->prefix]]);*/
-
-                $adminMenu = $this->cell('CakeBootstrap.Menu::Admin');
-                ?>
-
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right hidden-sm hidden-md">
-                <?= $adminMenu ?>
                 <li>
-                    <a href="#"><?= $this->Html->image('/' . 'nodes\\images\\de827227-bc4b-4df5-98ad-1efc6636fd52.gif', ['height' => '18', 'width' => '18', 'class' => 'img img-circle'])?> May</a>
+                    <?= $this->element($MCLOUD_ADMIN_TOP_MENU) ?>
+                </li>
+                <li>
+                    <?= $this->element('CakeBootstrap.usermenu') ?>
                 </li>
             </ul>
         </div><!--/.nav-collapse -->
