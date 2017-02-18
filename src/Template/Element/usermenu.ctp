@@ -8,7 +8,7 @@
                 <a href="<?= $this->Url->build(['prefix' => null, 'plugin' => 'CakeAuth', 'controller' => 'Users', 'action' => 'view', $session->read('Auth.User.id')]) ?>">
                     <?= $session->read('Auth.User.image') !== null ? $this->Html->image('/' . $session->read('Auth.User.image'), ['height' => '48', 'width' => '48', 'class' => 'img img-circle']) : '' ?><br />
                     <?= $session->read('Auth.User.username') ?><br />
-                    <span class="text-gray-dark">jdmaymeow@gmail.com</span>
+                    <span class="text-gray-dark"><?= $session->read('Auth.User.email') ?></span>
                 </a>
             </li>
             <li role="separator" class="divider"></li>

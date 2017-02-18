@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title><?= $this->fetch('title_for_page') ?>Blogging platform</title>
+    <title><?= $this->fetch('title_for_page') ?>MayMeow Cloud Platform</title>
 
     <!-- Page JS Plugins CSS -->
     <?= $this->fetch('css_for_page'); ?>
