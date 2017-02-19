@@ -8,11 +8,13 @@ use Cake\View\Form\ContextInterface;
 class ButtonWidget extends \Cake\View\Widget\ButtonWidget
 {
     use OptionsAwareTrait;
+    
     /**
      * @var array
      * @deprecated This property is no longer used.
      * @see OptionsAwareTrait::applyButtonStyles
      */
+
     protected $_styles = [
         'default',
         'success',
@@ -21,6 +23,7 @@ class ButtonWidget extends \Cake\View\Widget\ButtonWidget
         'info',
         'primary'
     ];
+
     /**
      * Renders a button.
      *

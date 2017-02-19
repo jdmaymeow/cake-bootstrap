@@ -35,6 +35,7 @@ class RadioWidget extends \Cake\View\Widget\RadioWidget
      * @var bool
      */
     protected $_inline = false;
+
     /**
      * Render a set of radio buttons.
      *
@@ -58,12 +59,13 @@ class RadioWidget extends \Cake\View\Widget\RadioWidget
      */
     public function render(array $data, ContextInterface $context)
     {
-        $data += [
-            'inline' => false,
-        ];
-        $this->_inline = $data['inline'];
-        return parent::render($data, $context);
+       $data += [
+           'inline' => false,
+       ];
+       $this->_inline = $data['inline'];
+       return parent::render($data, $context);
     }
+    
     /**
      * Renders a label element for a given radio button.
      *
@@ -79,12 +81,12 @@ class RadioWidget extends \Cake\View\Widget\RadioWidget
      */
     protected function _renderLabel($radio, $label, $input, $context, $escape)
     {
-        if ($this->_inline) {
-            $label = [
-                'text' => $radio['text'],
-                'class' => 'radio-inline'
-            ];
-        }
-        return parent::_renderLabel($radio, $label, $input, $context, $escape);
+       if ($this->_inline) {
+           $label = [
+               'text' => $radio['text'],
+               'class' => 'radio-inline'
+           ];
+       }
+       return parent::_renderLabel($radio, $label, $input, $context, $escape);
     }
 }

@@ -47,15 +47,15 @@ class CheckboxWidget extends \Cake\View\Widget\CheckboxWidget
      * @param \Cake\View\Form\ContextInterface $context The current form context.
      * @return string Generated HTML string.
      */
-    public function render(array $data, ContextInterface $context)
-    {
-        $data += [
-            'inline' => false,
-        ];
-        if ($data['inline']) {
-            $this->_templates->add(['checkboxContainer' => '{{content}}']);
-        }
-        unset($data['inline']);
-        return parent::render($data, $context);
-    }
+     public function render(array $data, ContextInterface $context)
+     {
+         $data += [
+             'inline' => false,
+         ];
+         if ($data['inline']) {
+             $this->_templates->add(['checkboxContainer' => '{{content}}']);
+         }
+         unset($data['inline']);
+         return parent::render($data, $context);
+     }
 }
