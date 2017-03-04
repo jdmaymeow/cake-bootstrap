@@ -1426,6 +1426,10 @@ a.bg-gray-lighter:focus {
 
 /**************** NAVBAR TABS SETUP *************/
 
+.cinema.with-nav-tabs h3 {
+  font-size: 18px;
+}
+
 .cinema.with-nav-tabs .nav-tabs > .open > a,
 .cinema.with-nav-tabs .nav-tabs > .open > a:hover,
 .cinema.with-nav-tabs .nav-tabs > .open > a:focus,
