@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><i class="fa fa-diamond text-amethyst"></i> MayMeow Cloud Platform</a>
+            <a class="navbar-brand" href="/"><i class="fa fa-diamond"></i> MayMeow Cloud Platform</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">

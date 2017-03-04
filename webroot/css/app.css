@@ -15,7 +15,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
 }
 
 .share-buttons {
@@ -1401,4 +1401,47 @@ a.bg-gray-lighter:focus {
 
 .bg-amethyst-sl {
     background-color: rgba(228, 220, 242, 0.15);
+}
+
+/**************** HEADER WITH NAW TABS *************/
+
+.cinema.with-nav-tabs {
+  padding-bottom: 0;
+  background-color: #fafbfc;
+}
+
+.cinema.with-nav-tabs .nav-tabs {
+  border-bottom: none;
+}
+
+.cinema.with-nav-tabs .nav-justified {
+  margin-bottom: -1px;
+}
+
+.cinema.with-nav-tabs .nav-tabs > li > a,
+.cinema.with-nav-tabs .nav-tabs > li > a:hover,
+.cinema.with-nav-tabs .nav-tabs > li > a:focus {
+  color: #555555;
+}
+
+/**************** NAVBAR TABS SETUP *************/
+
+.cinema.with-nav-tabs .nav-tabs > .open > a,
+.cinema.with-nav-tabs .nav-tabs > .open > a:hover,
+.cinema.with-nav-tabs .nav-tabs > .open > a:focus,
+.cinema.with-nav-tabs .nav-tabs > li > a:hover,
+.cinema.with-nav-tabs .nav-tabs > li > a:focus {
+  color: #737373;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.cinema.with-nav-tabs .nav-tabs > li.active > a,
+.cinema.with-nav-tabs .nav-tabs > li.active > a:hover,
+.cinema.with-nav-tabs .nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #ffffff;
+  border-color: #dddddd;
+  border-bottom-color: transparent;
+  border-top: 3px solid #ff6b6b;
 }
