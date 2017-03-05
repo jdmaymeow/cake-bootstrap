@@ -57,6 +57,21 @@ body {
   display: block;
 }
 
+/*** Header search ***/
+
+.header-search-input {
+  display: table-cell;
+  background: #3f4347;
+  border: 0;
+  box-shadow: none;
+}
+
+.header-search-input:focus {
+  color: #ffffff;
+  box-shadow: none;
+  background: #53585d;
+}
+
 
 /* Custom page CSS
 -------------------------------------------------- */

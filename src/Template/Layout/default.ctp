@@ -38,8 +38,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">
-                <i class="fa fa-diamond"></i> MayMeow Cloud Platform
+            <a class="navbar-brand" style="color: #ffffff;" href="/">
+                <i class="fa fa-diamond"></i>
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar">
@@ -50,8 +50,17 @@
             </button>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control header-search-input" placeholder="Search Cloud">
+                </div>
+            </form>
 
+            <ul class="nav navbar-nav">
+                <li><a href="<?= $this->Url->build([
+                        'prefix' => false, 'plugin' => 'MCloudResources',
+                         'controller' =>'OwnedResources', 'action' => 'dashboard'
+                    ])?>">Resources</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right hidden-sm hidden-md">
