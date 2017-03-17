@@ -25,6 +25,9 @@
     <?php echo $this->Html->css('CakeBootstrap.app'); ?>
     <?php echo $this->Html->css('CakeFontAwesome.font-awesome.min'); ?>
 
+    <!-- Cake Highlight -->
+    <?php echo $this->Html->css('CakeHighlight.atom-one-dark'); ?>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -103,7 +106,10 @@
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <?php echo $this->Html->script('CakeBootstrap.jquery-1.12.1.min'); ?>
 <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+
+<?php echo $this->Html->script('CakeHighlight.highlight.pack'); ?>
 <script>
+    hljs.initHighlightingOnLoad();
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         $('[data-toggle="popover"]').popover()
