@@ -9,7 +9,7 @@
     <meta name="author" content="MCloud Team">
     <link rel="icon" href="../../favicon.ico">
 
-    <title><?= $this->fetch('title_for_page') ?>MayMeow Cloud Platform</title>
+    <title><?= $this->fetch('title_for_page') ?>MCloud Platform</title>
 
     <!-- Page JS Plugins CSS -->
     <?= $this->fetch('css_for_page'); ?>
@@ -88,8 +88,8 @@
     <div class="container">
         <div class="row" style="border-top: 1px solid #e5e5e5">
             <div class="col-md-5">
-                <p class="text-muted"><i class="fa fa-pencil"></i> with <i class="fa fa-heart-o text-smooth"></i> by <a
-                            href="https://github.com/MayMeow">May Meow</a>
+                <p class="text-muted"><i class="fa fa-code"></i> with <i class="fa fa-heart-o text-smooth"></i> by <a
+                            href="https://github.com/MayMeow">SomethingLovely</a>
                 </p>
             </div>
             <div class="col-md-2 text-center"><p class="text-muted"><i class="fa fa-diamond"></i></p></div>
