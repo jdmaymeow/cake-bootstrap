@@ -73,6 +73,7 @@
                 <li>
                     <?= $this->element('CakeBootstrap.usermenu') ?>
                 </li>
+                <?= $MCLOUD_NAV_MENU ? $this->element('CakeBootstrap.navmenu') : '' ?>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -109,14 +110,19 @@
 
 <?php echo $this->Html->script('CakeHighlight.highlight.pack'); ?>
 <script>
+    try {
+        window.$ = window.jQuery = module.exports;
+    } catch(e) {}
+
     hljs.initHighlightingOnLoad();
+
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-        $('[data-toggle="popover"]').popover()
-        $('[data-toggle="dropdown"]').dropdown()
-        $('#myTabs a[href="#profile"]').tab('show')
-        $('#myTabs a[href="#home"]').tab('show')
-        $('#myTabs a[href="#articles"]').tab('show')
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="dropdown"]').dropdown();
+        $('#myTabs a[href="#profile"]').tab('show');
+        $('#myTabs a[href="#home"]').tab('show');
+        $('#myTabs a[href="#articles"]').tab('show');
     })
 </script>
 <!-- <script src="../../dist/js/bootstrap.min.js"></script>-->
